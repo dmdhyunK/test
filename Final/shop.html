@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color:#4d7eb1ab;
+            color: white;
+        }
+        a{
+            text-decoration:none;
+            color:white
+        }
+        li{
+           list-style-type:none;
+        }
+        #logo{
+           float: left;
+           margin: 20px 0 0 20px;
+        }
+        #menus {
+           display: flex;
+           padding: 10px 20px 0 0;
+        }
+        #top_menu{
+           float: right;
+           padding:10px 10px 0 400px;
+        
+        }
+        #main_menu{
+           text-align: center;
+           padding-left: 400px;
+        }
+        #main_menu li{
+           display: inline;
+           margin-left: 80px;
+        }
+        .sub_menu {
+           display: flex; 
+           justify-content: space-between;
+           align-items: center; 
+           width: 80%; 
+           margin: 20px 380px;
+           padding: 5px 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: 200px;
+        }
+        .blue {
+            color: #00ADEF;
+            text-decoration: underline;
+        }
+        p{
+            color: skyblue;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .bold{
+            font-size:medium;
+            font-weight:bold;
+        }
+        .per{
+            background-color: green;
+            width:100%;
+            color: greenyellow;
+            font-size: 25px;
+            font-weight:bolder;
+        }
+        .light{
+            color:rgb(200, 200, 200);
+            font-size:medium;
+
+        }
+        .deal{
+            color: black;
+            font-size:medium;
+            font-weight:lighter;
+            padding: 5px 0 0 3px;
+        }
+        .install {
+            color: white;
+            font-size: 23x;
+            margin-bottom: 5px;
+        }
+        .install:hover{
+            color: #00ADEF;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-right: 100px;
+        }
+        .center{
+            margin: 50px 0 0 55px;
+        }
+        .bar{
+            background: linear-gradient(to right, #3A6390, #0F216E);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 3px;
+        }
+        .mar{
+            margin-right: 18px;
+            display: inline;
+        }
+        .main-content {
+            margin-left: 300px;
+            padding: 20px;
+        }
+        .main {
+            display: flex;
+        }
+        .main img {
+            max-width: 100%;
+            width: auto;
+            margin-left: 70px;
+            border-radius: 5px;
+        }
+        h4{
+            text-decoration: none;
+            color: gainsboro;
+            font-family:Arial, Helvetica, sans-serif;
+            max-width: 60%;
+        }
+        .alignl{
+            text-align: left;
+            margin: 50px 0 0 500px;
+        }
+        .side {
+            padding-left: 20px;
+            width: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title {
+            font-size: 24px;
+            margin: 10px 0 20px 0;
+        }
+        .category{
+            font-size: 14px;
+            color: grey;
+            padding: 20px 20px;
+            left: 120px;
+            top: 123px;
+            position: absolute;
+        }
+        .category-text p {
+            margin: 0; 
+            padding: 0;
+        }
+        .category-text {
+            margin-top: 6px; 
+            font-size: 14px;
+            color: rgb(193, 211, 222);
+            opacity: 70%;
+        }
+        .c{
+            color:#3A6390;
+            font-weight: bold;
+        }
+        .category-text:hover{
+            color:white;
+        }
+        .rec{
+            display:flex;
+        }
+        .rec-box {
+            position: relative;
+            opacity: 80%;
+            margin-left: 10px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .rec-box img {
+           padding: 10px 20px 0 0;
+           height: auto;
+        }
+        .rec-box:hover{
+           opacity: 100%;
+        }
+        .price-tag {
+            position: absolute;
+            bottom: 10px;
+            left: 35%;
+            background-color: whitesmoke;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: lighter;
+            text-align: center;
+        }
+    </style>
+     <title>Welcome to Book Museum</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../book_logo.png">
+        </div>
+        <nav id="menus">
+            <ul id="main_menu">
+                <li class="blue">STORE</li>
+                <li>COMMUNITY</li>
+                <li>ABOUT</li>
+                <li>SUPPORT</li>
+            </ul>
+            <div id="top_menu">
+                <div class="install">Install App</div>
+            <div class="line">
+                login | language ▼
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sub_menu">
+        <div class="bar">
+            <ul>
+            <a href="../0final.html"><li class="mar">Lab</li></a>
+            <a href="library.html"><li class="mar">Your Library</li></a>
+            <a href="new.html"><li class="mar">New & Noteworthy</li></a>
+            <a href="category.html"><li class="mar">Categories</li></a>
+            <a href="shop.html"><li class="mar blue">Points Shop</li></a>
+            <li class="mar">News</li></a>
+            </ul>
+            <form>
+                <input type="text"><img src="../site img/search.png" width="20">
+            </form>
+        </div>
+        </div>
+        </div>
+        <div class="main-content">
+                <div class="center">
+                    <div class="rec">
+                        <div class="rec-box">
+                            <img src="rainbow.jpg" width="250px" title="무지개 물고기">
+                            <div class="price-tag">₩11,700</div>
+                        </div>
+                        <div class="rec-box">
+                            <img src="Mydad.jpg" width="250px" title="우리 아빠가 최고야">
+                            <div class="price-tag">₩9,500</div>
+                        </div>  
+                        <div class="rec-box">
+                            <img src="pig.jpg" width="250px" title="돼지책">
+                            <div class="price-tag">₩9,900</div>
+                        </div> 
+                        <div class="rec-box">
+                            <img src="fox.png" width="250px" title="책 먹는 여우">
+                            <div class="price-tag">₩13,320</div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="center">
+                    <div class="rec">
+                        <div class="rec-box">
+                            <img src="tree.jpg" width="250px" title="아낌없이 주는 나무">
+                            <div class="price-tag">₩12,600</div>
+                        </div>
+                        <div class="rec-box">
+                            <img src="je.jpg" width="250px" title="제로니모의 환상모험">
+                            <div class="price-tag">₩17,010</div>
+                        </div>  
+                        <div class="rec-box">
+                            <img src="math.jpg" width="250px" title="수학이 수근수근">
+                            <div class="price-tag">₩5,310</div>
+                        </div> 
+                        <div class="rec-box">
+                            <img src="captin.jpg" width="250px" title="캡틴 언더팬츠">
+                            <div class="price-tag">₩12,420</div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="center">
+                    <div class="rec">
+                        <div class="rec-box">
+                            <img src="100floor.jpg" width="250px" title="100층짜리 집">
+                            <div class="price-tag">₩35,550</div>
+                        </div>
+                        <div class="rec-box">
+                            <img src="magicbus.jpg" width="250px" title="신기한 스쿨버스">
+                            <div class="price-tag">₩7,200</div>
+                        </div>  
+                        <div class="rec-box">
+                            <img src="magictree.jpg" width="250px" title="마법의 시간여행">
+                            <div class="price-tag">₩8,100</div>
+                        </div> 
+                        <div class="rec-box">
+                            <img src="dog.jpg" width="250px" title="강아지똥">
+                            <div class="price-tag">₩12,600</div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+                        <div class="category">
+                            <img src="cate1.png" width="145"> 
+                            <div class="category-text">
+                                <p>Taste Recommended</p> 
+                                Your Preference, Everywhere 
+                            </div> <br>
+                            <img src="cate2.png" width="100"> 
+                            <div class="category-text">
+                                <p>MUSEUM GIFT CARDS</p> 
+                                Give the Gift of Book 
+                            </div> <br>
+                            <div class="category-text">
+                                <div class="c"> RECOMMENDED <br>  </div> 
+                                By Friends <br>
+                                By Curators <br>
+                                Tags <br>
+                            </div> <br>
+                            <div class="category-text">
+                                <div class="c">Browse Categories<br></div>
+                                Top Sellers <br>
+                                New Releases <br>
+                                Upcoming <br>
+                                Specials <br>
+                                ebook <br>
+                            </div> <br>
+                            <div class="category-text">
+                                <div class="c">Browse by genres<br></div>
+                                Free To Read <br>
+                                Early Access <br>
+                                Essay <br>
+                                Poem <br>
+                                Play <br>
+                                Mystery <br>
+                                Scientific <br>
+                                History <br>
+                                Drawing <br>
+                                Thesis <br>
+                                Periodical <br>
+                                Online article <br>
+                            </div>
+                        </div>
+                    </body>
+                    </html>

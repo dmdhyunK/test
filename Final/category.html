@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color:#4d7eb1ab;
+            color: white;
+        }
+        a{
+            text-decoration:none;
+            color:white
+        }
+        li{
+           list-style-type:none;
+        }
+        #logo{
+           float: left;
+           margin: 20px 0 0 20px;
+        }
+        #menus {
+           display: flex;
+           padding: 10px 20px 0 0;
+        }
+        #top_menu{
+           float: right;
+           padding:10px 10px 0 400px;
+        
+        }
+        #main_menu{
+           text-align: center;
+           padding-left: 400px;
+        }
+        #main_menu li{
+           display: inline;
+           margin-left: 80px;
+        }
+        .sub_menu {
+           display: flex; 
+           justify-content: space-between;
+           align-items: center; 
+           width: 80%; 
+           margin: 20px 380px;
+           padding: 5px 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: 200px;
+        }
+        .blue {
+            color: #00ADEF;
+            text-decoration: underline;
+        }
+        p{
+            color: skyblue;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .bold{
+            font-size:medium;
+            font-weight:bold;
+        }
+        .per{
+            background-color: green;
+            width:100%;
+            color: greenyellow;
+            font-size: 25px;
+            font-weight:bolder;
+        }
+        .light{
+            color:rgb(200, 200, 200);
+            font-size:medium;
+
+        }
+        .deal{
+            color: black;
+            font-size:medium;
+            font-weight:lighter;
+            padding: 5px 0 0 3px;
+        }
+        .install {
+            color: white;
+            font-size: 23x;
+            margin-bottom: 5px;
+        }
+        .install:hover{
+            color: #00ADEF;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-right: 100px;
+        }
+        .center{
+            margin: 50px 0 0 55px;
+        }
+        .bar{
+            background: linear-gradient(to right, #3A6390, #0F216E);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 3px;
+        }
+        .mar{
+            margin-right: 18px;
+            display: inline;
+        }
+        .main-content {
+            margin-left: 300px;
+            padding: 20px;
+        }
+        .main {
+            display: flex;
+        }
+        .main img {
+            max-width: 100%;
+            width: auto;
+            margin-left: 70px;
+            border-radius: 5px;
+        }
+        h4{
+            text-decoration: none;
+            color: gainsboro;
+            font-family:Arial, Helvetica, sans-serif;
+            max-width: 60%;
+        }
+        .alignl{
+            text-align: left;
+            margin: 50px 0 0 500px;
+        }
+        .side {
+            padding-left: 20px;
+            width: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title {
+            font-size: 24px;
+            margin: 10px 0 20px 0;
+        }
+        .category{
+            font-size: 14px;
+            color: grey;
+            padding: 20px 20px;
+            left: 120px;
+            top: 123px;
+            position: absolute;
+        }
+        .category-text p {
+            margin: 0; 
+            padding: 0;
+        }
+        .category-text {
+            margin-top: 6px; 
+            font-size: 14px;
+            color: rgb(193, 211, 222);
+            opacity: 70%;
+        }
+        .c{
+            color:#3A6390;
+            font-weight: bold;
+        }
+        .category-text:hover{
+            color:white;
+        }
+        .rec{
+            display:flex;
+        }
+        .rec-box {
+            position: relative;
+            opacity: 80%;
+            margin-left: 10px;
+        }
+        .rec-box img {
+           padding: 10px 20px 0 0;
+           height: auto;
+        }
+        .rec-box:hover{
+           opacity: 100%;
+        }
+    </style>
+     <title>Welcome to Book Museum</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../book_logo.png">
+        </div>
+        <nav id="menus">
+            <ul id="main_menu">
+                <li class="blue">STORE</li>
+                <li>COMMUNITY</li>
+                <li>ABOUT</li>
+                <li>SUPPORT</li>
+            </ul>
+            <div id="top_menu">
+                <div class="install">Install App</div>
+            <div class="line">
+                login | language ▼
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sub_menu">
+        <div class="bar">
+            <ul>
+            <a href="../0final.html"><li class="mar">Lab</li></a>
+            <a href="library.html"><li class="mar">Your Library</li></a>
+            <a href="new.html"><li class="mar">New & Noteworthy</li></a>
+            <a href="category.html"><li class="mar blue">Categories</li></a>
+            <a href="shop.html"><li class="mar">Points Shop</li></a>
+            <li class="mar">News</li></a>
+            </ul>
+            <form>
+                <input type="text"><img src="../site img/search.png" width="20">
+            </form>
+        </div>
+        </div>
+        </div>
+        <div class="alignl">Written By</div>
+        <div class="main-content">
+            <div class="main">
+                <img src="Dahl.jpg"height="350">
+                <div class="side">
+                    <div class="title">Roald Dahl</div>
+                    <h4>
+                        &nbsp;Roald Dahl is one of the world’s best and most original storytellers. His stories' unique blend of mischief, full hearted hope and a touch of darkness, have captured the imaginations of generations around the world. <br><br>
+                        &nbsp;One of his first moments of inspiration came when he was at boarding school, when a local chocolate factory invited pupils to trial new chocolate bars - 35 years later, Charlie and the Chocolate Factory was published. <br> <br>
+                        &nbsp;He wrote lots more stories, many from a hut in his back garden in Great Missenden, Buckinghamshire; from Sophie's adventures with the BFG and James' journey on the Giant Peach, to Matilda's brilliant bravery against The Trunchbull. <br><br>
+                        &nbsp;His ability to transport you to fantastic worlds continues to enthral readers today.
+                    </h4>
+                    </div>
+                 </div>
+                 <div class="center">
+                    <div class="rec">
+                        <div class="rec-box">
+                            <img src="Dahl1.jpg" height="700px" title="The Witches">
+                        </div>
+                        <div class="rec-box">
+                            <img src="Dahl2.jpg" height="700px" title="Charlie and the Big Glass Elevator">
+                        </div>  
+                        <div class="rec-box">
+                            <img src="Dahl3.jpg" height="700px" title="The Twits">
+                        </div> 
+                        <div class="rec-box">
+                            <img src="Dahl4.jpg" height="700px" title="Esio Trot">
+                        </div>  
+                        </div>
+                                </div>
+                        </div>
+                        <div class="category">
+                            <img src="cate1.png" width="145"> 
+                            <div class="category-text">
+                                <p>Taste Recommended</p> 
+                                Your Preference, Everywhere 
+                            </div> <br>
+                            <img src="cate2.png" width="100"> 
+                            <div class="category-text">
+                                <p>MUSEUM GIFT CARDS</p> 
+                                Give the Gift of Book 
+                            </div> <br>
+                            <div class="category-text">
+                                <div class="c"> RECOMMENDED <br>  </div> 
+                                By Friends <br>
+                                By Curators <br>
+                                Tags <br>
+                            </div> <br>
+                            <div class="category-text">
+                                <div class="c">Browse Categories<br></div>
+                                Top Sellers <br>
+                                New Releases <br>
+                                Upcoming <br>
+                                Specials <br>
+                                ebook <br>
+                            </div> <br>
+                            <div class="category-text">
+                                <div class="c">Browse by genres<br></div>
+                                Free To Read <br>
+                                Early Access <br>
+                                Essay <br>
+                                Poem <br>
+                                Play <br>
+                                Mystery <br>
+                                Scientific <br>
+                                History <br>
+                                Drawing <br>
+                                Thesis <br>
+                                Periodical <br>
+                                Online article <br>
+                            </div>
+                        </div>
+                    </body>
+                    </html>

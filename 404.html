@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color:#4d7eb1ab;
+            color: white;
+        }
+        #button{
+            width:60px;
+            padding:5px;
+            border-radius: 3px;
+            background-color: rgb(90, 89, 89);
+            text-align: center;
+            font-size: 10px;
+        }
+        a{
+            text-decoration:none;
+            color:white
+        }
+        li{
+           list-style-type:none;
+        }
+        #logo{
+           float: left;
+           margin: 20px 0 0 20px;
+        }
+        #menus {
+           display: flex;
+           padding: 10px 20px 0 0;
+        }
+        #top_menu{
+           float: right;
+           padding:10px 10px 0 400px;
+        
+        }
+        #main_menu{
+           text-align: center;
+           padding-left: 400px;
+        }
+        #main_menu li{
+           display: inline;
+           margin-left: 80px;
+        }
+        .sub_menu {
+           display: flex; 
+           justify-content: space-between;
+           align-items: center; 
+           width: 80%; 
+           margin: 20px 380px;
+           padding: 5px 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: 200px;
+        }
+        .blue {
+            color: #00ADEF;
+            text-decoration: underline;
+        }
+        p{
+            color: skyblue;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .bold{
+            font-size:medium;
+            font-weight:bold;
+        }
+        .per{
+            background-color: green;
+            width:100%;
+            color: greenyellow;
+            font-size: 25px;
+            font-weight:bolder;
+        }
+        .light{
+            color:rgb(200, 200, 200);
+            font-size:medium;
+
+        }
+        .deal{
+            color: black;
+            font-size:medium;
+            font-weight:lighter;
+            padding: 5px 0 0 3px;
+        }
+        .install {
+            color: white;
+            font-size: 23x;
+            margin-bottom: 5px;
+        }
+        .install:hover{
+            color: #00ADEF;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-right: 100px;
+        }
+        .center{
+            margin: 50px 0 0 55px;
+        }
+        .bar{
+            background: linear-gradient(to right, #3A6390, #0F216E);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 3px;
+        }
+        .mar{
+            margin-right: 18px;
+            display: inline;
+        }
+        .main-content {
+            margin-left: 300px;
+            padding: 20px;
+        }
+        .main {
+            display: flex;
+            width: 700px;
+            height: 351px;
+            background-color: #060813a3;
+            box-shadow: 3px 5px 7px 5px rgba(7, 7, 7, 0.1);
+            padding-right: 8px;
+            margin-left: 180px;
+        }
+        .main img {
+            max-width: 100%;
+            width: auto;
+        }
+        .alignl{
+            text-align: left;
+            margin: 50px 0 0 500px;
+        }
+        .side {
+            padding-left: 20px;
+            width: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title {
+            font-size: 24px;
+            margin: 10px 0 20px 0;
+        }
+        .images{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            width: auto;
+            opacity: 60%;
+        }
+        .images:hover{
+            opacity: 100%;
+        }
+        .sale{
+            margin: 10px 5px 5px 0;
+        }
+        .category{
+            font-size: 14px;
+            color: grey;
+            padding: 20px 20px;
+            left: 120px;
+            top: 123px;
+            position: absolute;
+        }
+        .category-text p {
+            margin: 0; 
+            padding: 0;
+        }
+        .category-text {
+            margin-top: 6px; 
+            font-size: 14px;
+            color: rgb(193, 211, 222);
+            opacity: 70%;
+        }
+        .c{
+            color:#3A6390;
+            font-weight: bold;
+        }
+        .category-text:hover{
+            color:white;
+        }
+        .sale{
+            display:flex;
+        }
+        
+        .sale-box {
+            position: relative;
+            margin-bottom: 5px;
+        }
+
+        .sale-box img {
+           padding-bottom: 0px;
+           height: auto;
+        }
+        .blue-box {
+            position: absolute;
+            width: 320px;
+            height: 80px;
+            padding: 10px 10px 0 10px;
+            opacity: 90%;
+            gap: 5px; 
+            background-color: #00ADEF;
+        }
+        .blue-box2 {
+            position: absolute;
+            width: 320px;
+            height: 80px;
+            opacity: 90%;
+            padding: 10px 10px 0 10px;
+            margin-left: 344px;
+            gap: 5px; 
+            background-color: #00ADEF;
+        }
+        .mini{
+            flex-direction: column;
+            gap: 20px;    
+        }
+        .mini1{
+            width: 100%;
+            height: 47.5px;
+            background-color: #B4DEF5;
+        }
+        .mini2{
+            width: 100%;
+            height: 47.5px;
+            background-color: #B4DEF5;
+        }
+        .per2{
+            background-color: green;
+            width:29%;
+            color: greenyellow;
+            position: absolute;         
+            transform: translate(80%, -50%);
+            text-align: center;
+            font-size: 25px;
+            font-weight:bolder;
+            margin-left: 50px;
+        }
+        .bottom2{
+            margin-right: 10px;
+            opacity: 80%;
+        }
+        .bottom2:hover{
+            opacity: 100%;
+        }
+        .bottom{
+            display: flex;
+            gap: 5px; 
+            margin-top: 15px; 
+            height: auto;
+        }
+        .gray {
+            background-color: rgb(77, 77, 88);
+            width:240px;
+            margin-right: 15px;
+        }
+        .gray img {
+            height: auto;
+            padding-bottom: 50px;
+        }
+        .gray2{
+            background-color: green;
+            width: 50px;
+            color: greenyellow;
+            position: absolute;         
+            transform: translate(30%, -190%);
+            text-align: center;
+            font-size: 18px;
+        }
+        .gray3{
+            background-color: gray;
+            width: 100px;
+            border-radius:5%;
+            position: absolute;         
+            transform: translate(30%, -190%);
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+    <title>Welcome to Book Museum</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="book_logo.png">
+        </div>
+        <nav id="menus">
+            <ul id="main_menu">
+                <li class="blue">STORE</li>
+                <li>COMMUNITY</li>
+                <li>ABOUT</li>
+                <li>SUPPORT</li>
+            </ul>
+            <div id="top_menu">
+                <div class="install">Install App</div>
+            <div class="line">
+                login | language ▼
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sub_menu">
+        <div class="bar">
+            <ul>
+            <a href="0final.html"><li class="mar blue">Lab</li></a>
+            <a href="Final/library.html"><li class="mar">Your Library</li></a>
+            <a href="Final/new.html"><li class="mar">New & Noteworthy</li></a>
+            <a href="Final/category.html"><li class="mar">Categories</li></a>
+            <a href="Final/shop.html"><li class="mar">Points Shop</li></a>
+            <li class="mar">News</li></a>
+            </ul>
+            <form>
+                <input type="text"><img src="site img/search.png" width="20">
+            </form>
+        </div>
+        </div>
+        </div>
+        <div class="alignl">Recommended</div>
+        <div class="main-content">
+            <div class="main">
+                <img src="Final/book1.jpg"height="350">
+                <div class="side">
+                    <div class="title">달 샤베트</div>
+                    <div class="images">
+                        <img src="Final/moon1.jpg" height="80">
+                        <img src="Final/moon2.jpg" height="80">
+                        <img src="Final/moon3.jpg" height="80">
+                        <img src="Final/moon4.jpg" height="80">
+                    </div>
+                    <div class="title">Now Available</div>
+                    <div id="button">
+                        Top Seller</div></a>
+                    </div>
+                 </div>
+                 <div class="bottom2">
+                 <div class="center"><img src="Final/mid.png" width="955px"></div>
+                </div>
+                 <div class="center">
+                    Special Offers
+                    <div class="sale">
+                        <div class="sale-box">
+                                <img src="Final/3-1.jpg" width="340px">
+                                <div class="blue-box">
+                                    <div class="bold">WEEKEND DEAL</div>
+                                    <div class="light">Offer ends 26 Dec @ 3:00pm</div>
+                                    <div class="per">Up To -80%</div>
+                                </div>
+                            <img src="Final/3-2.jpg" width="340px">
+                            <div class="blue-box2">
+                                <div class="bold">WEEKEND DEAL</div>
+                                <div class="light">Offer ends 18 Dec @ 3:00pm</div>
+                                <div class="per">Up To -90%</div>
+                            </div>
+                        </div>
+                        <div class="mini">
+                            <div class="sale-box"> 
+                            <img src="Final/3-3.jpg">
+                            <div class="mini1">
+                            <div class="deal">Today's deal!</div>
+                            <div class="per2">-25%</div>
+                        </div>
+                       
+                                <div class="sale-box">
+                                    <img src="Final/3-4.jpg">
+                                    <div class="mini2">
+                                        <div class="deal">Today's deal!</div>
+                                        <div class="per2">-35%</div>
+                                    </div>
+                                </div>
+                        </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        Browse by category
+                        <div class="bottom">
+                        <div class="bottom2"> <img src="Final/4-1.jpg" width="243px"></div>
+                        <div class="bottom2"> <img src="Final/4-2.png" width="243px" height="241px"></div>
+                        <div class="bottom2"> <img src="Final/4-3.png" width="243px" height="241px"></div>
+                        <div class="bottom2"> <img src="Final/4-4.png" width="243px" height="241px"></div>
+                        </div>
+                        <br><br>
+                        The Most Read Book by Readers Now
+                        <div class="bottom">
+                            <div class="gray"><img src="Final/5-1.png" width="240px">
+                                <div class="gray3">₩19,900~</div>
+                            </div>
+                            <div class="gray"><img src="Final/5-2.png" width="240px">
+                                <div class="gray3">₩8,700~</div>
+                            </div>
+                            <div class="gray"><img src="Final/5-3.png" width="240px">
+                                <div class="gray2">-40%</div>
+                            </div>
+                            <div class="gray"><img src="Final/5-4.png" width="240px">
+                                <div class="gray3">₩25,000~</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+        </div>
+    <div class="category">
+        <img src="Final/cate1.png" width="145"> 
+        <div class="category-text">
+            <p>Taste Recommended</p> 
+            Your Preference, Everywhere 
+        </div> <br>
+        <img src="Final/cate2.png" width="100"> 
+        <div class="category-text">
+            <p>MUSEUM GIFT CARDS</p> 
+            Give the Gift of Book 
+        </div> <br>
+        <div class="category-text">
+        <div class="c"> RECOMMENDED <br>  </div> 
+        By Friends <br>
+        By Curators <br>
+        Tags <br>
+    </div> <br>
+        <div class="category-text">
+            <div class="c">Browse Categories<br></div>
+            Top Sellers <br>
+            New Releases <br>
+            Upcoming <br>
+            Specials <br>
+            ebook <br>
+        </div> <br>
+        <div class="category-text">
+            <div class="c">Browse by genres<br></div>
+            Free To Read <br>
+            Early Access <br>
+            Essay <br>
+            Poem <br>
+            Play <br>
+            Mystery <br>
+            Scientific <br>
+            History <br>
+            Drawing <br>
+            Thesis <br>
+            Periodical <br>
+            Online article <br>
+        </div>
+    </div>
+</body>
+</html>
